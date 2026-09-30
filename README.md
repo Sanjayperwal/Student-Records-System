@@ -46,6 +46,7 @@ Student-Evaluation-System/
 - `queries.py` - Ranking and student queries.
 - `reports.py` - Class and subject reports.
 - `storage.py` - Basic student record operations.
+- `test_student_evaluation.py` - Simple tests for result calculation, storage and ranking.
 
 ## How to Run
 
@@ -71,7 +72,15 @@ CGPA = Percentage / 10
 
 ## Testing
 
-The program can be checked by trying valid and invalid inputs, adding students, updating and deleting records, checking calculations, ranking and reports.
+A simple test file is included to check result calculation, student storage and ranking.
+
+Run the tests with:
+
+```bash
+python test_student_evaluation.py
+```
+
+The program can also be checked by trying valid and invalid inputs, adding students, updating and deleting records, checking calculations, ranking and reports.
 
 ## Project Purpose
 
