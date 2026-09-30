@@ -1,10 +1,19 @@
-# Student Evaluation System
+# Student Records & Evaluation System
 
 ## About the Project
 
-This is a simple Python project for managing student details and marks.
+The **Student Records & Evaluation System** is a simple command-line Python project developed for the VITyarthi **Build Your Own Project** activity.
 
-The program can add, view, update and delete students. It also calculates percentage and CGPA, checks pass or fail status, shows rankings and gives basic reports.
+The system manages student records and evaluates academic performance. It can add, view, update and delete students, calculate total marks, percentage and CGPA, check PASS/FAIL status, rank students, answer common student queries, and generate basic class reports.
+
+## Student Details
+
+- **Student:** Sanjay Perwal
+- **Registration No.:** 26MIM10155
+- **Faculty:** Dr. Kannan Shanmugam Sir
+- **Project Type:** Individual – Build Your Own Project
+- **Date:** September 2026
+- **Slots:** B11 + B12 + B13 + C14 + E11 + E12
 
 ## Features
 
@@ -13,12 +22,18 @@ The program can add, view, update and delete students. It also calculates percen
 - Update student
 - Delete student
 - View all students
-- Calculate total marks, percentage and CGPA
-- Check pass/fail status
+- Calculate total marks
+- Calculate percentage
+- Calculate CGPA
+- Check PASS/FAIL status
 - Student ranking
-- Find 10 CGPA students
-- Find full-mark students
-- Basic class reports
+- Find students with 10 CGPA
+- Find students with full marks
+- Class summary
+- Subject-wise average
+- Highest scorer
+- Input validation
+- Basic automated testing
 
 ## Technologies Used
 
@@ -29,34 +44,36 @@ The program can add, view, update and delete students. It also calculates percen
 ## Project Structure
 
 ```text
-Student-Evaluation-System/
+Student-Records-System/
 ├── main.py
 ├── student.py
 ├── queries.py
 ├── reports.py
 ├── storage.py
+├── test_student_evaluation.py
 ├── README.md
 └── statement.md
 ```
 
-### Files
+### File Description
 
-- `main.py` - Main menu and program control.
-- `student.py` - Student details, marks and result calculation.
-- `queries.py` - Ranking and student queries.
-- `reports.py` - Class and subject reports.
-- `storage.py` - Basic student record operations.
-- `test_student_evaluation.py` - Simple tests for result calculation, storage and ranking.
+- `main.py` – Main program and menu control.
+- `student.py` – Student CRUD operations, marks validation and result calculation.
+- `queries.py` – Ranking and student-related queries.
+- `reports.py` – Class summary, subject averages and highest-scorer analysis.
+- `storage.py` – Basic student record search, add and delete operations.
+- `test_student_evaluation.py` – Tests for result calculation, storage and ranking.
+- `statement.md` – Project problem statement, scope and target users.
 
 ## How to Run
 
-Open the project folder in the terminal and run:
+Open the project folder in a terminal and run:
 
 ```bash
 python main.py
 ```
 
-If needed, use:
+If required:
 
 ```bash
 python3 main.py
@@ -66,13 +83,49 @@ python3 main.py
 
 ```text
 Total = Subject 1 + Subject 2 + Subject 3
+
 Percentage = (Total / Maximum Total) × 100
+
 CGPA = Percentage / 10
 ```
 
+A student is marked **PASS** when each subject has at least 40% of the configured maximum marks.
+
+## Student Record
+
+Each student record contains:
+
+```text
+Registration No.
+Student Name
+Subject 1 Marks
+Subject 2 Marks
+Subject 3 Marks
+Total Marks
+Maximum Total
+Percentage
+CGPA
+PASS / FAIL Status
+```
+
+## Queries and Reports
+
+### Student Queries
+
+1. Ranking
+2. Students with 10 CGPA
+3. Students with full marks
+4. PASS/FAIL list
+
+### Class Analysis
+
+1. Class summary
+2. Subject average
+3. Highest scorer
+
 ## Testing
 
-A simple test file is included to check result calculation, student storage and ranking.
+The project includes `test_student_evaluation.py`.
 
 Run the tests with:
 
@@ -80,12 +133,47 @@ Run the tests with:
 python test_student_evaluation.py
 ```
 
-The program can also be checked by trying valid and invalid inputs, adding students, updating and deleting records, checking calculations, ranking and reports.
+The tests cover:
+
+- Result calculation
+- PASS/FAIL calculation
+- Adding and finding a student
+- Deleting a student
+- Student ranking
 
 ## Project Purpose
 
-This project is made to practice Python programming concepts such as variables, operators, conditions, loops, lists, functions, searching, counting, calculations and simple modular programming.
+This project demonstrates practical Python concepts including:
+
+- Variables and data types
+- Input and output
+- Operators and calculations
+- Conditional statements
+- Loops
+- Lists
+- Functions
+- Searching
+- Sorting/ranking
+- Input validation
+- Modular programming
+- Basic testing
+
+## Future Enhancements
+
+- Add permanent JSON or file-based storage.
+- Support more subjects.
+- Make pass marks configurable.
+- Add a graphical user interface.
+- Export results to CSV/PDF.
+- Add login and role-based access.
+
+## GitHub Repository
+
+https://github.com/Sanjayperwal/Student-Records-System.git
 
 ## Author
 
-VITyarthi Build Your Own Project
+**Sanjay Perwal**  
+Registration No.: **26MIM10155**
+
+**VITyarthi – Build Your Own Project**
